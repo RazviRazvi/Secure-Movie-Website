@@ -53,16 +53,27 @@ CSRF tokens are recommended for additional protection.
 Installation and Setup:
 
 Clone the repository
+
 git clone https://github.com/RazviRazvi/Secure-Movie-Website
+
 cd Secure-Movie-App
+
 Set up the database
+
 Open XAMPP and start Apache and MySQL
+
 Go to phpMyAdmin and import the Cinema.sql file
+
 Configure config.php with your database credentials
+
 Start the project
+
 Place the PHP pages folder in the htdocs directory (C:\xampp\htdocs\Secure-Movie-App)
+
 Open a browser and go to:
+
 http://localhost/Rezervare_filme/login.php
+
 Usage
 
 Users can register and log in securely.
