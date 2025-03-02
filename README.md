@@ -20,23 +20,35 @@ Local Development Environment: XAMPP
 Security Features
 
 SQL Injection Prevention
-All database queries use prepared statements to prevent SQL injection attacks. Example:
+All database queries use prepared statements to prevent SQL injection attacks. 
+Example:
 $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
 $stmt->bind_param('s', $username);
 $stmt->execute();
+
+
 Cross-Site Scripting (XSS) Protection
-User input is sanitized and escaped before being displayed. Example:
+User input is sanitized and escaped before being displayed. 
+Example:
 echo htmlspecialchars($user_input, ENT_QUOTES, 'UTF-8');
+
 Secure Password Storage
 Passwords are hashed using password_hash() before being stored in the database. The password verification process is done using password_verify() to compare hashed passwords securely.
+
+
 Session Security
 Session fixation prevention using session_regenerate_id(true)
 Session timeout after a period of inactivity
 Session hijacking prevention by binding sessions to the user's IP address
+
+
 Cross-Site Request Forgery (CSRF) Protection
 Session-based authentication ensures only logged-in users can perform actions.
 CSRF tokens are recommended for additional protection.
-Installation and Setup
+
+
+
+Installation and Setup:
 
 Clone the repository
 git clone https://github.com/RazviRazvi/Secure-Movie-Website
