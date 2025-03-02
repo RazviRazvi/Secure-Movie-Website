@@ -86,6 +86,9 @@ Implementing CSRF tokens for full protection
 Adding email verification for new user accounts
 Improving the user interface using a modern framework such as Bootstrap or Tailwind CSS
 Deploying the project to an online hosting provider
+
 Contact
+
 Email: rgaleseanu@yahoo.com
+
 LinkedIn: https://www.linkedin.com/in/razvan-galeseanu-46a515349/
