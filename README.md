@@ -23,7 +23,9 @@ SQL Injection Prevention
 All database queries use prepared statements to prevent SQL injection attacks. 
 Example:
 $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+
 $stmt->bind_param('s', $username);
+
 $stmt->execute();
 
 
